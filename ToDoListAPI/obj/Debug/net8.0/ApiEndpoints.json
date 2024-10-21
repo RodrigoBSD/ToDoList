@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "ToDoListAPI.Controllers.TarefaController",
+    "Method": "AdicionarTarefa",
+    "RelativePath": "api/tarefa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarefaView",
+        "Type": "ToDoListAPI.ViewModel.TarefaViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoListAPI.Controllers.TarefaController",
+    "Method": "ListarTarefas",
+    "RelativePath": "api/tarefa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoListAPI.Controllers.TarefaController",
+    "Method": "AtualizarTarefa",
+    "RelativePath": "api/tarefa/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarefaEditorView",
+        "Type": "ToDoListAPI.ViewModel.TarefaEditorViewModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoListAPI.Controllers.TarefaController",
+    "Method": "DeletarTarefa",
+    "RelativePath": "api/tarefa/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoListAPI.Controllers.TarefaController",
+    "Method": "ObterTarefaPorID",
+    "RelativePath": "api/tarefa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

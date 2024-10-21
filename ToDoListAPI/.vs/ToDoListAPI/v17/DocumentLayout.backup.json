@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\Seguro\\ToDoListAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB015B2D-4BB1-4F2F-8BCE-478C2B413599}|ToDoListAPI.csproj|p:\\seguro\\todolistapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB015B2D-4BB1-4F2F-8BCE-478C2B413599}|ToDoListAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB015B2D-4BB1-4F2F-8BCE-478C2B413599}|ToDoListAPI.csproj|p:\\seguro\\todolistapi\\viewmodel\\tarefaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB015B2D-4BB1-4F2F-8BCE-478C2B413599}|ToDoListAPI.csproj|solutionrelative:viewmodel\\tarefaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "P:\\Seguro\\ToDoListAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "P:\\Seguro\\ToDoListAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-21T00:21:10.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TarefaViewModel.cs",
+              "DocumentMoniker": "P:\\Seguro\\ToDoListAPI\\ViewModel\\TarefaViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\TarefaViewModel.cs",
+              "ToolTip": "P:\\Seguro\\ToDoListAPI\\ViewModel\\TarefaViewModel.cs",
+              "RelativeToolTip": "ViewModel\\TarefaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T00:19:26.706Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
