@@ -41,7 +41,7 @@ namespace ToDoListAPI.Controllers
             }
             else
             {
-                return BadRequest($"Tarefa não encontrada");
+                return Ok($"Tarefa não encontrada");
             }
 
         }
