@@ -18,6 +18,8 @@ Altere o arquivo **appsettings.json** substituindo os campos **HOST**, **USARNAM
 
 ![image](https://github.com/user-attachments/assets/4a6af04c-33c8-4aec-80d3-71871f464880)
 
+Para rodar o projeto, abra o Visual Studio com o arquivo **ToDoListAPI.sln** disponivel na pasta ToDoListAPI.
+
 ## Endpoints
 
 | Verbo  | Endpoint                | Parâmetro | Body                         | Response                               |
