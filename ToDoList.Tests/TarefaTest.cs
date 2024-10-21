@@ -25,25 +25,25 @@ public class TarefaControllerTests
     [Fact]
     public async Task AdicionarTarefa_RetornarOkResult_QuandoTarefaValida()
     {
-        // Arrange: cria o ViewModel e simula o comportamento do repositório
+        // Arrange
         var tarefaViewModel = new TarefaViewModel
         {
             Titulo = "Tarefa Teste",
-            Descricao = "Descrição Teste"
+            Descricao = "DescriÃ§Ã£o Teste"
         };
 
         var tarefaEsperada = new Tarefa(tarefaViewModel.Titulo, tarefaViewModel.Descricao);
 
-        // Mock: define o que o método Adicionar do repositório deve retornar
+        // Mock
         _mockRepository.Setup(repo => repo.Adicionar(It.IsAny<Tarefa>()))
             .ReturnsAsync(tarefaEsperada);
 
-        // Act: executa o método do controller
+        // Act
         var result = await _controller.AdicionarTarefa(tarefaViewModel);
 
-        // Assert: verifica se o resultado é do tipo OkObjectResult e contém a tarefa correta
-        var okResult = Assert.IsType<OkObjectResult>(result); // Verifica se é um Ok (200)
-        var tarefaRetornada = Assert.IsType<Tarefa>(okResult.Value); // Verifica o valor retornado
+        // Assert
+        var okResult = Assert.IsType<OkObjectResult>(result); 
+        var tarefaRetornada = Assert.IsType<Tarefa>(okResult.Value); 
 
         Assert.Equal(tarefaEsperada.Titulo, tarefaRetornada.Titulo);
         Assert.Equal(tarefaEsperada.Descricao, tarefaRetornada.Descricao);
@@ -52,11 +52,11 @@ public class TarefaControllerTests
     [Fact]
     public async Task AtualizarTarefa_RetornarOkResult_QuandoTarefaAtualizada()
     {
-        // Arrange: cria o ViewModel e a tarefa que será atualizada
+        // Arrange
         var tarefaEditorViewModel = new TarefaEditorViewModel
         {
             Titulo = "Tarefa Atualizada",
-            Descricao = "Descrição Atualizada"
+            Descricao = "DescriÃ§Ã£o Atualizada"
         };
 
         var idTarefa = 1;
@@ -65,16 +65,16 @@ public class TarefaControllerTests
             Id = idTarefa
         };
 
-        // Mock: define o comportamento do repositório ao chamar o método Atualizar
+        // Mock
         _mockRepository.Setup(repo => repo.Atualizar(tarefaEditorViewModel, idTarefa))
             .ReturnsAsync(tarefaAtualizadaEsperada);
 
-        // Act: executa o método do controller
+        // Act
         var result = await _controller.AtualizarTarefa(tarefaEditorViewModel, idTarefa);
 
-        // Assert: verifica se o resultado é do tipo OkObjectResult e contém a tarefa atualizada
-        var okResult = Assert.IsType<OkObjectResult>(result); // Verifica se o status é Ok (200)
-        var tarefaRetornada = Assert.IsType<Tarefa>(okResult.Value); // Verifica o valor retornado
+        // Assert
+        var okResult = Assert.IsType<OkObjectResult>(result); 
+        var tarefaRetornada = Assert.IsType<Tarefa>(okResult.Value); 
 
         Assert.Equal(tarefaAtualizadaEsperada.Id, tarefaRetornada.Id);
         Assert.Equal(tarefaAtualizadaEsperada.Titulo, tarefaRetornada.Titulo);
@@ -84,19 +84,19 @@ public class TarefaControllerTests
     [Fact]
     public async Task DeletarTarefa_RetornarOkResult_QuandoTarefaDeletada()
     {
-        // Arrange: define o Id da tarefa a ser deletada
+        // Arrange
         var idTarefa = 1;
 
-        // Mock: define o comportamento do repositório ao chamar o método Remover
+        // Mock
         _mockRepository.Setup(repo => repo.Remover(idTarefa))
-            .ReturnsAsync(true); // Simula que a tarefa foi removida com sucesso
+            .ReturnsAsync(true); 
 
-        // Act: executa o método do controller
+        // Act
         var result = await _controller.DeletarTarefa(idTarefa);
 
-        // Assert: verifica se o resultado é do tipo OkObjectResult e que a tarefa foi removida
-        var okResult = Assert.IsType<OkObjectResult>(result); // Verifica se o status é Ok (200)
-        Assert.Equal("Tarefa excluida", okResult.Value); // Verifica o valor retornado
+        // Assert
+        var okResult = Assert.IsType<OkObjectResult>(result); 
+        Assert.Equal("Tarefa excluida", okResult.Value); 
        
     }
 
