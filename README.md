@@ -10,19 +10,13 @@ Este projeto se trata de um desafio técnico, onde foi solicitado o desenvolvime
 
 ## Configurando Ambiente
 
-Realize o backup do bando de dados Backup-BancoTarefas em algum servidor SqlServer
+Realize o backup do bando de dados **ToDoAPI.bak** em algum servidor SqlServer
 
-Imagem do banco criado
+![image](https://github.com/user-attachments/assets/ca012e62-e9ea-4fa3-ad9c-31d2103d66f9)
 
-Altere o arquivo appsettings.json substituindo os campos HOST, USARNAME e PASSWORD com os dados do seu servidor.
+Altere o arquivo **appsettings.json** substituindo os campos **HOST**, **USARNAME** e **PASSWORD** com os dados do seu servidor.
 
-Imagem do arquivo de configuração
-
-## Como rodar o projeto 
-
-
-## Como rodar os teste
-
+![image](https://github.com/user-attachments/assets/4a6af04c-33c8-4aec-80d3-71871f464880)
 
 ## Endpoints
 
@@ -35,7 +29,9 @@ Imagem do arquivo de configuração
 | DELETE | api/tarefa/{id}         | id        | N/A                          | Retorna se a tarefa foi excluida ou não|
 
 ### Swagger
-Colocar depois imagem do Swagger
+
+![image](https://github.com/user-attachments/assets/ff662c14-f626-4a8b-820f-4a32c63db6f0)
+
 
 Schema para interagir com os metodos que exigirem
 
