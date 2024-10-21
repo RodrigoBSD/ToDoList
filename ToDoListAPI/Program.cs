@@ -12,9 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ConnectionContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
 
-//builder.Services.AddDbContext<ConnectionContext>(options => 
-//options.UseSqlServer("SERVER=RODRIGOBSD\\DESENVOLVIMENTO;Database=ToDoAPI;User ID=sa;Password=Ro260301;TrustServerCertificate=True"));
-
 builder.Services.AddScoped<ITarefaRepository, TarefaRepository>();
 
 builder.Services.AddControllers();
